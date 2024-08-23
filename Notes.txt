@@ -1,0 +1,35 @@
+npm init -y
+npm i express
+npm i ejs
+npm i mongoose
+npm i nodemon
+npm i method-override
+npm i ejs-mate
+npm i connect-flash
+//for authentication
+npm i passport
+npm i passport-local
+npm i passport-local-mongoose
+npm i multer ,,,use for uploading file
+npm i dotenv ,,to load .env file
+npm i cloudinary 
+
+//To write mongodbQueries in in vsCode Terminal
+mongosh "mongodb://localhost:27017"
+use wanderlust
+**start writing queries**
+
+cloud password and username
+username-abhishekpimpalkar35
+password-12wanderlust
+
+database link
+-mongodb+srv://abhishekpimpalkar35:@#12wanderlust@cluster0.6ugmpsk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://abhishekpimpalkar35:@#12wanderlust@cluster0.6ugmpsk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+//first use below code to connect mongodb
+// const MONGO_URL='mongodb://localhost:27017/wanderlust'
+
+
+//Advise *** *******************************
+never push .env file on github

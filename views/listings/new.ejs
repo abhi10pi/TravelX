@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerPlate") %>
+<body>
+  <div class="row mt-3">
+    <div class="col-8 offset-2">
+    <h2>Create New Listing</h2>
+    <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+     <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="listing[title]" placeholder="enter title" class="form-control" required>
+        <div class="invalid-feedback">Title should be Valid</div>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" placeholder="enter description"  class="form-control" required></textarea>
+        <div class="invalid-feedback">description should be Valid</div>
+    </div>
+   
+    <div class="mb-3">
+        <label for="image" class="form-label">Upload Imgage</label>
+        <input type="file" name="listing[image]" class="form-control">
+        required
+   </div>
+
+    <div class="row">
+    <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" name="listing[price]" placeholder="enter price" class="form-control" required>
+        <div class="invalid-feedback">Price should be Valid</div>
+    </div>
+    <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" name="listing[country]" placeholder="enter country" class="form-control" required>
+        <div class="invalid-feedback">Country should be Valid</div>
+    </div>
+   </div>
+    
+    <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" name="listing[location]" placeholder="enter location" class="form-control" required>
+        <div class="invalid-feedback">Location should be Valid</div>
+    </div>
+   <button class="btn add-btn dark-btn mt-3">Add</button>
+    </form>
+ </div> 
+</div>
+</body>
